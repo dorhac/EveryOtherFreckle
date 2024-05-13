@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
 # Load the model
-model = load_model('melanoma_cancer_model.h5')
+model = load_model('melanoma_cancer_model.h5',compile=False)
 
 # Define the function to make predictions
 def classify_image(img):
